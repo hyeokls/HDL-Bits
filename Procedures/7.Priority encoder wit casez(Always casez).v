@@ -14,5 +14,6 @@ module top_module (
             8'bzz100000 : pos = 3'd5;
             8'bz1000000 : pos = 3'd6;
             8'b10000000 : pos = 3'd7;
+            default : pos = 2'b0;
       endcase
 endmodule
