@@ -7,7 +7,7 @@ module top_module(
     integer i;
     always@(*)begin
         sum[0]= a[0] ^ b[0] ^ cin;
-	    cout[0] = (a[0] & b[0]) | (b[i] & cin) | (cin & a[i])
+	    cout[0] = (a[0] & b[0]) | (b[i] & cin) | (cin & a[i]);
        // cout[0] = a[0] & b[0] | cin & (a[0]|b[0]);
         
         for(i =1; i<100; i++)begin
