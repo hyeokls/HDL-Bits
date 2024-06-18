@@ -1,0 +1,11 @@
+module top_module (
+    input clk,
+    input d, 
+    input ar,   // asynchronous reset
+    output q);
+    always@(posedge clk,posedge ar)
+        if(ar==1)
+            q<=0;
+    	else
+            q<=d;
+endmodule
