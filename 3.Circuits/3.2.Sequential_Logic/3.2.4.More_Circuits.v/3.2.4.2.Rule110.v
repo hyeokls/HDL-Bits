@@ -28,3 +28,9 @@ always @(posedge clk ) begin
     end
 end 
 endmodule
+
+
+
+// reg m[2:0]; 선언 뒤
+m<={q[i+1],q[i],q[i-1]};
+case(m) 하니까 안되더라 이거 해결방안은?
